@@ -3,4 +3,4 @@
 
 #define ABSO(x) (((x) < (0)) ? (-(x) : (x))
 
-#endif /* ABSO */
+#endif /* ABSO(X) */
