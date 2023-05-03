@@ -3,11 +3,11 @@
 /**
  * add_nodeint_end - inserts a node at the end of a linked list
  * @head: pointer to the 1st element in the list
- * @a: insert data to new element
+ * @n: insert data to new element
  *
  * Return: NULL if it fails, pointer to the new node
  */
-listint_t *add_nodeint_end(listint_t **head, const int a)
+listint_t *add_nodeint_end(listint_t **head, const int n)
 {
 	listint_t *new;
 	listint_t *temp = *head;
@@ -16,7 +16,7 @@ listint_t *add_nodeint_end(listint_t **head, const int a)
 	if (!new)
 		return (NULL);
 
-	new->a = a;
+	new->n = n;
 	new->next = NULL;
 
 	if (*head == NULL)

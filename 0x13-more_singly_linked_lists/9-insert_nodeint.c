@@ -5,11 +5,11 @@
  * at a given position
  * @head: pointer to the first node in the list
  * @idx: index the new added node
- * @d: insert data to the new node
+ * @n: insert data to the new node
  *
  * Return: NULL or show pointer at the new node
  */
-listint_t *insert_nodeint_at_index(listint_t **head, unsigned int idx, int d)
+listint_t *insert_nodeint_at_index(listint_t **head, unsigned int idx, int n)
 {
 	unsigned int j;
 	listint_t *new;
@@ -19,7 +19,7 @@ listint_t *insert_nodeint_at_index(listint_t **head, unsigned int idx, int d)
 	if (!new || !head)
 		return (NULL);
 
-	new->d = d;
+	new->n = n;
 	new->next = NULL;
 
 	if (idx == 0)
